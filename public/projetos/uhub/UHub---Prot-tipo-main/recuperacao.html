@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uhub - Recuperação de Senha</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="auth-page">
+
+    <header class="app-header">
+        <a href="index.html" class="logo" title="Voltar para Uhub">Uhub</a>
+    </header>
+
+    <main class="password-page">
+        <section class="password-card">
+            <h1>Recuperação de senha</h1>
+
+            <p>
+                Insira seu e-mail pessoal abaixo e você irá
+                receber um link para redefinição da senha de sua
+                conta do Uhub.
+            </p>
+
+            <form action="redefinicao.html" class="password-form" novalidate>
+                <input class="input" type="email" name="email" placeholder="E-mail pessoal" autocomplete="email" required>
+
+                <button class="btn primary" type="submit">
+                    Enviar link
+                </button>
+            </form>
+        </section>
+    </main>
+        <footer class="bottom-bar"></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uhub - Login</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="auth-page login-page">
+  
+<header class="app-header">
+        <a href="index.html" class="logo" title="Voltar para Uhub">Uhub</a>
+    </header>
+
+    <main class="login-layout">
+        <section class="welcome">
+            <p class="eyebrow">Seja bem-vindo(a) ao</p>
+            <h1>Uhub</h1>
+            <p>A principal plataforma de interação entre universitários!</p>
+        </section>
+
+        <section class="auth-card">
+            <form action="feed.html" method="POST" autocomplete="on">
+                <input class="input" type="email" name="email" placeholder="E-mail ou nome de usuário" required>
+                <input class="input" type="password" name="senha" placeholder="Senha" required>
+
+                <button class="btn primary" type="submit">Entrar</button>
+
+            <p class="auth-text">
+                    Esqueceu sua senha?
+                    <a href="recuperacao.html" title="Recuperar senha">Redefinir senha</a>
+                </p>
+
+            <p class="auth-text">
+                    Não tem uma conta?
+                    <a href="cadastro.html" title="Criar nova conta">Crie a sua aqui</a><br>
+                    <a href="feed.html" title="Acessar como visitante">conta teste</a>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bottom-bar"></footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uhub - Redefinição de Senha</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="auth-page">
+
+<header class="app-header">
+        <a href="index.html" class="logo" title="Voltar para Uhub">Uhub</a>
+    </header>
+
+    <header class="top-bar">
+        <a class="back-light" href="index.html" title="Voltar para login">←</a>
+    </header>
+
+
+    <main class="password-page">
+
+        <section class="reset-card">
+            <h1>Redefinição de senha</h1>
+
+            <p>
+                Altere sua senha aqui e você será redirecionado
+                para a página de Login do site.
+            </p>
+
+            <form action="index.html" class="password-form js-password-match-form" novalidate>
+                <label for="nova-senha">Nova senha</label>
+                <input id="nova-senha" class="input js-password-main" type="password" name="nova_senha" minlength="8" autocomplete="new-password" required>
+
+                <label for="confirmar-nova-senha">Confirmar nova senha</label>
+                <input id="confirmar-nova-senha" class="input js-password-confirm" type="password" name="confirmar_nova_senha" minlength="8" autocomplete="new-password" required>
+                <small class="password-match-message" aria-live="polite"></small>
+                <button class="btn primary" type="submit">
+                    Redefinir
+                </button>
+            </form>
+        </section>
+
+    </main>
+    <footer class="bottom-bar"></footer>
+    <script src="script.js"></script>
+</body>
+</html>

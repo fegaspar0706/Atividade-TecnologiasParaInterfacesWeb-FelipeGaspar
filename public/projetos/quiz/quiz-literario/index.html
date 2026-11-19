@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Literário</title>
+  <link rel="icon" href="https://uploads.onecompiler.io/43rztqcbh/43zm86mbw/como-escrever-um-livro-topo-Photoroom.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Menu Inicial -->
+  <div class="menu-container" id="menu">
+    <div class="menu-text">
+      <h1>QUIZ LITERÁRIO</h1>
+      <h2>Você conhece tudo sobre livros?</h2>
+      <p>Então faça nosso quiz em comemoração à Semana da Biblioteca e descubra se você é um verdadeiro "expert" da literatura popular!</p>
+
+      <label for="nome" class="caixanome">Digite seu nome:</label>
+      <input id="nome" type="text" placeholder="Seu nome aqui..." />
+
+      <button id="start-btn">Começar</button>
+    </div>
+
+    <div class="imageminicial">
+      <img src="https://uploads.onecompiler.io/43rztqcbh/43zm86mbw/como-escrever-um-livro-topo.png" alt="imagem inicial">
+    </div>
+  </div>
+
+  <!-- Quiz -->
+  <div class="quiz-container" id="quiz" style="display: none;">
+    <div class="quiz-content">
+      <div class="difficulty-label" id="difficulty"></div>
+      <div class="question-number" id="question-number"></div>
+      <div class="question" id="question"></div>
+      <div class="answer-buttons" id="answer-buttons"></div>
+      <div id="next-button">
+        <button id="next-btn">Próxima</button>
+      </div>
+      <div class="score" id="score">Pontuação: 0</div>
+    </div>
+
+    <div class="quiz-image">
+      <img id="question-image" src="" alt="Imagem da pergunta">
+    </div>
+  </div>
+  
+<<!-- Container do ranking, inicialmente escondido -->
+<div id="ranking" style="display:none;">
+  <h2>Ranking - Top 10</h2>
+  <ul id="ranking-list"></ul>
+  <button id="restart-btn">Reiniciar Quiz</button>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

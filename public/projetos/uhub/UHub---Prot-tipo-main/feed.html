@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uhub - Feed</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="app-header">
+        <a href="feed.html" class="logo">Uhub</a>
+
+        <button class="logout-btn">
+            SAIR
+        </button>
+    </header>
+
+    <main class="feed-layout">
+
+        <aside class="sidebar">
+
+            <a class="mini-profile" href="perfil.html">
+                <span class="avatar"></span>
+
+                <span>
+                    <strong>Usuário Teste</strong><br>
+                    <small>@usuarioteste</small>
+                </span>
+            </a>
+
+            <form class="search-box" role="search">
+                <span>⌕</span>
+                <input type="search" placeholder="Pesquisar">
+            </form>
+
+            <h2>Categorias</h2>
+
+            <nav class="categories">
+                <a href="#">Ciência da Computação</a>
+                <a href="#" class="active">Engenharia da Computação</a>
+                <a href="#">ADS</a>
+                <a href="#">Medicina</a>
+                <a href="#">Direito</a>
+            </nav>
+
+        </aside>
+
+        <section class="feed">
+
+            <button class="btn small">+ Novo post</button>
+
+            <article class="post-card">
+
+                <div class="post-user">
+                    <span class="avatar"></span>
+
+                    <div>
+                        <h3>Usuário 2<br>
+                            <small>Medicina - UFTM</small>
+                        </h3>
+                        <p>@usuario2</p>
+                    </div>
+                </div>
+
+                <button class="btn follow">Seguir</button>
+
+                <p class="post-text">
+                    Alguém tem recomendação de materiais para estudar anatomia?
+                </p>
+
+            </article>
+
+            <article class="post-card">
+
+                <div class="post-user">
+                    <span class="avatar"></span>
+
+                    <div>
+                        <h3>Usuário 3<br>
+                            <small>Direito - UNIUBE</small>
+                        </h3>
+                        <p>@usuario3</p>
+                    </div>
+                </div>
+
+                <button class="btn follow">Seguir</button>
+
+                <p class="post-text">
+                    Qual comunidade vocês indicam para estágio?
+                </p>
+
+            </article>
+
+            <h2 class="suggest-title">Sugestão de perfis</h2>
+
+            <div class="suggestions">
+
+                <article class="suggest-card">
+                    <span class="avatar"></span>
+                    <strong>Usuário 4</strong>
+                    <small>@usuario4</small>
+                    <button class="btn follow">Seguir</button>
+                </article>
+
+                <article class="suggest-card">
+                    <span class="avatar"></span>
+                    <strong>Usuário 5</strong>
+                    <small>@usuario5</small>
+                    <button class="btn follow">Seguir</button>
+                </article>
+
+                <article class="suggest-card">
+                    <span class="avatar"></span>
+                    <strong>Usuário 6</strong>
+                    <small>@usuario6</small>
+                    <button class="btn follow">Seguir</button>
+                </article>
+
+            </div>
+
+        </section>
+
+        <aside class="communities">
+
+            <h2>Comunidades</h2>
+
+            <div class="community-box">
+                <p>u/MedicinaUFTM</p>
+                <p>u/ADS_IFTM</p>
+                <p>u/DireitoUNIUBE</p>
+                <p>u/Computacao</p>
+                <p>u/UniversitariosBR</p>
+            </div>
+
+        </aside>
+
+    </main>
+    <footer class="bottom-bar"></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
