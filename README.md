@@ -79,3 +79,11 @@ A avaliação solicita commits: o histórico deve refletir alterações reais fe
 ## Imagens reais dos projetos
 
 Os cards de projetos exibem as capturas originais presentes em `public/img/`, sem imagens de banco ou ilustrações genéricas. As imagens são referenciadas no array tipado `src/data/conteudo.ts` e exibidas pelo componente `ProjetoCard.tsx` com `object-contain`, preservando o enquadramento completo.
+
+
+## Captura de tela do portfólio
+
+A imagem abaixo apresenta a interface do meu portfólio,
+desenvolvido com React, TypeScript e Tailwind CSS v4.
+
+![Print do portfólio](public/img/print-pagina-completa.jpeg)
